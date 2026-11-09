@@ -374,7 +374,7 @@ async function submitSurvey() {
       }),
     };
 
-    const response = await fetch(`${API_URL}/submit.php`, {
+    const response = await fetch(`${API_URL}/submit`, {
       method: "POST",
 
       headers: {
@@ -421,7 +421,7 @@ async function loadQuestions() {
   try {
     $("survey-content").innerHTML = `<p>${translations[language].loading}</p>`;
 
-    const response = await fetch(`${API_URL}/questions.php`);
+    const response = await fetch(`${API_URL}/questions`);
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
