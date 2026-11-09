@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://inaya-survey-backend.csmonline.net/api/questions";
 
 let sections = [];
 let currentSection = 0;
